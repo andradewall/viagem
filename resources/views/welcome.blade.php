@@ -1,3 +1,33 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getlocale()) }}"
+    x-data="tallstackui_darkTheme()"
+    x-bind:class="{ 'dark bg-gray-700': darkTheme, 'bg-sky-50': !darkTheme }">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>laravel</title>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+
+        <!-- styles -->
+        <style></style>
+
+        <tallstackui:script />
+        @livewireStyles
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
+    <body class="font-sans antialiased text-sky-950 dark:text-white/50 max-w-screen-lg mx-auto">
+        @include('layouts.navbar')
+        <x-ts-card header="HOTEL">
+            <strong>Hotel 6 de Octubre</strong><br>
+            Av. Independencia, 2852<br>
+            8 Jun 1400 - 13 Jun 1000<br>
+            <a href="https://maps.app.goo.gl/yQqNUhg1TefG21z8A">Maps</a>
+        </x-ts-card>
 <h1 id="hotel">Hotel</h1>
 <p><strong>Hotel 6 de Octubre</strong>
 Av. Independencia, 2852
@@ -129,3 +159,7 @@ Av. Independencia, 2852
   App baratinho pra usar as bikes e passear
   Sugestão: passeio por Palermo de bike</li>
 </ul>
+
+        @livewireScripts
+    </body>
+</html>
