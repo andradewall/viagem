@@ -15,8 +15,12 @@
     <body class="text-sky-950 dark:text-white/50 max-w-screen-lg mx-auto">
         @include('layouts.navbar')
 
+        <x-ts-toast />
+        <x-ts-dialog />
+
         {{ $slot }}
 
-        @livewireScript
+        @include('layouts.footer')
+        @livewireScripts
     </body>
 </html>

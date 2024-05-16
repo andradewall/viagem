@@ -1,17 +1,8 @@
 <x-layouts.app>
 
-        <x-ts-card header="HOTEL">
-            <strong>Hotel 6 de Octubre</strong><br>
-            Av. Independencia, 2852<br>
-            8 Jun 1400 - 13 Jun 1000<br>
-            <a href="https://maps.app.goo.gl/yQqNUhg1TefG21z8A">Maps</a>
-        </x-ts-card>
-<h1 id="hotel">Hotel</h1>
-<p><strong>Hotel 6 de Octubre</strong>
-Av. Independencia, 2852
-8 Jun 1400 - 13 Jun 1000
-<a href="https://maps.app.goo.gl/yQqNUhg1TefG21z8A">Maps</a></p>
-<hr>
+    <x-ts-link :href="route('hotel')"
+        text="Hotel" />
+
 <h1 id="cafés">Cafés</h1>
 <ul>
 <li><h4 id="el-gato-negro">El Gato Negro</h4>
@@ -26,12 +17,6 @@ Av. Independencia, 2852
 </ul>
 <hr>
 <h1 id="misc">Misc</h1>
-<ul>
-<li><h4 id="puente-de-la-mujer-em-puerto-madero">Puente de la Mujer em Puerto Madero</h4>
-  #free #paisagem #puerto-madero #estrutura
-  Ponte branca que remete a dois casais dançando tango</li>
-</ul>
-<h1 id="-1"></h1>
 <ul>
 <li><h4 id="caminito">Caminito</h4>
   #local #bairro #free #caminito
